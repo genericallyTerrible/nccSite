@@ -380,6 +380,7 @@ ul {
 
 #submissionResults {
     margin-left: 10px;
+    text-align: left;
     float: left;
     height: auto;
     width: auto;
