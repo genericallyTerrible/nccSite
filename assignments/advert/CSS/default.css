@@ -1,0 +1,100 @@
+/*John Merkel*/
+body {
+    background-color: antiquewhite;
+    color: antiquewhite;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: antiquewhite;
+}
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+#container {
+    border-radius: 25px;
+    border: solid black 2px;
+    background-color: olivedrab;
+    width: 910px;
+    height: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+#title {
+    text-align: center;
+    font-size: 48pt;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+#mausoleum {
+    float: left;
+    border: solid 3px antiquewhite;
+    margin-left: 25px;
+    width: 475px;
+}
+
+#text_TR {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+#text_TR h2 {
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#gloLeft {
+    margin-left: 65px;
+    font-size: 24px;
+    float: left;
+}
+#tenPercent {
+    margin-right:65px;
+    font-size: 52px;
+    float: right;
+}
+#gloLeft, #tenPercent {
+    color: black;
+    text-shadow: 0 0 10px antiquewhite;
+}
+
+#flagDiv{
+    float: right;
+    margin-right: 25px;
+}
+#flagDiv p {
+    margin: 0 0 0 0;
+}
+#flagpole {
+    width: 320px;
+    border: solid 3px antiquewhite;
+}
+
+#text_BL {
+    margin-left: 25px;
+    width: 500px;
+    text-align: center;
+    float: left;
+    margin-top: 0;
+    margin-bottom:0;
+}
+#text_BL p {
+    margin-top: inherit;
+    margin-bottom: inherit;
+    font-size: 28pt;
+}
+#text_BL h1 {
+    margin-top: inherit;
+    margin-bottom: 0;
+    font-size: 42pt;
+}
+#text_BL a {
+    margin-top: 0;
+    margin-bottom: inherit;
+    font-size: 24pt;
+}

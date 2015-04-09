@@ -1,0 +1,46 @@
+body {
+    background-color: lightslategrey;
+}
+
+#container {
+    width: 50%;
+    min-width: 625px;
+    min-height: 285px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #e24643;
+    border-radius: 15px;
+}
+
+#h1Title {
+    color: lightslategray;
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.formClass {
+    min-width: 300px;
+    height: auto;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.TextBox {
+    width: 150px;
+    height: 23px;
+    margin-bottom: 5px;
+    text-align: right;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.button {
+    margin-bottom: 5px;
+    margin-left: 25px;
+    border-radius: 5px;
+}

@@ -1,0 +1,112 @@
+#navContainer {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+#threeLines {
+    padding: 0 10px;
+    display: initial;
+    height: 40px;
+    float: right;
+}
+
+#threeLines:hover {
+    background-color: black;
+    background-color: rgba(25,25,25,0.5);
+}
+
+    #threeLines:hover + .nav {
+        display: block;
+    }
+
+.nav {
+    margin-top: 0;
+    width: 100%;
+    background-color: black;
+    background-color: rgba(25,25,25,0.5);
+    display: none;
+}
+    .nav:hover {
+        display: block;
+    }
+
+.menuItem {
+    float: none;
+    width: 100%;
+}
+
+#home {
+    float: left;
+    width: 110px;
+}
+
+.dropdown {
+    width: 100%;
+}
+
+.dropLi {
+    width:100%;
+    padding-left: 20px;
+}
+
+#pictureHead {
+    background: url("../images/smallHeader.jpg") center;
+    height: 200px;
+
+}
+
+#headerContainer {
+    background: none;
+}
+
+#headerDiv {
+    font-size: xx-large;
+}
+
+#changeLog {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.container {
+    width:85%;
+}
+
+#contentContainer, #changeContainer {
+    width: 90%;
+    margin-left: 4%;
+}
+
+.contentHead {
+    font-size: 22px;
+}
+
+.contentBody {
+    font-size: 16px;
+}
+
+#dbNav tr td a{
+    font-size: 12pt;
+}
+
+#sqlFormDiv {
+    width: 175px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sqlFieldset {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sqlFieldset label {
+    text-align: left;
+}
+
+#submitSpacing {
+    display: none;
+}

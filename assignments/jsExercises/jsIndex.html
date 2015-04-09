@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>JavaScript Exercises</title>
+    <link href="default.css" rel="stylesheet" ;/>
+    <link href="minMaxCalc.css" rel="stylesheet"/>
+    <link href="arraysAndStuff.css" rel="stylesheet"/>
+    <script src="minMax.js"></script>
+    <script src="arraysJS.js"></script>
+</head>
+<body>
+<div id="container">
+    <h1 id="h1Title">Javascript Exercises!</h1>
+
+    <form class="formClass" id="minMaxForm">
+        <div id="divMaxMinCalc">
+            <input id="tbMaxMinArg1" class="TextBox" type="text"/>
+            <br>
+            <input id="tbMaxMinArg2" class="TextBox" type="text"/>
+            <br>
+            <input id="btnMinMax" class="button" type="button" value="Find Min/Max"
+                   onclick="FindMinMax('tbMaxMinArg1', 'tbMaxMinArg2', 'divAnswerMin', 'divAnswerMax', 'minMax')"/>
+            <br>
+
+            <div id="calcDivContainer" class="TextBox output">
+                <div id="minMax"></div>
+                <div id="divAnswerMin" class="answer"></div>
+                <div id="divAnswerMax" class="answer"></div>
+            </div>
+        </div>
+    </form>
+
+    <form class="formClass" id="arraysForm">
+        <div id="mainInterface">
+            <input class="TextBox arraysTB" id="addTB" type="text"/>
+            <input class="button btnArrays" id="btnArrays1" type="button" value="Add an item"
+                   onclick="addArrayItem('addTB', 'primaryOutput', 'isNumeric', 'arrayMinMax')"/>
+            <table id="table">
+                <tr>
+                    <td id="primaryOutput" class="TextBox output">
+                        []
+                    </td>
+                </tr>
+                <tr>
+                    <td id="isNumeric" class="TextBox output">
+                        All values numeric?
+                    </td>
+                </tr>
+                <tr>
+                    <td id="arrayMinMax" class="TextBox output">
+                        [Min/Max] = [/]
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="TextBox" id="removeTB" type="text"/>
+                        <input class="button btnArrays" id="removeButton" type="button" value="Remove by index"
+                               onclick="removeArrayItem('removeTB', 'primaryOutput', 'isNumeric', 'arrayMinMax')"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <form class="formClass" id="extendsArraysForm">
+        <div id="searchContainer">
+            <input class="TextBox" id="searchBox" type="text"/>
+            <input class="button btnArrays" id="searchBtn" type="button" value="Search array"
+                   onclick="searchArray('searchBox', 'searchOutput')"/>
+
+            <div id="searchOutput" class="TextBox output">
+                Search Results
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

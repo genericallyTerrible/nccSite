@@ -1,0 +1,76 @@
+table {
+    height: 72px;
+    width: 300px;
+    padding: 0;
+    margin-left: -45px;
+    margin-top: -5px;
+}
+
+td, tr {
+    padding: 0;
+    margin: 0;
+}
+
+td {
+    width: 300px;
+}
+
+#arraysForm {
+    float: right;
+}
+
+#mainInterface {
+    width: 260px;
+    height: 150px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#removeButton {
+    margin-right: 0px;
+}
+
+#primaryOutput {
+    height: 36px;
+    overflow: hidden;
+}
+
+#extendsArraysForm {
+    float: right;
+    width: 310px;
+}
+
+#searchContainer {
+    padding: 5px 5px 0;
+}
+
+#searchBox {
+    float: left;
+}
+
+#searchBtn {
+    float: right;
+    margin-right: 0;
+}
+
+.output {
+    margin-left: 0;
+    width: 100%;
+    max-width: 280px;
+    height: 18px;
+    overflow: hidden;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.arraysTB {
+    margin-left: -45px;
+}
+
+.btnArrays {
+    margin-right: 10px;
+    margin-left: 0;
+    padding: 2px;
+    float: right;
+    width: 115px;
+}

@@ -1,0 +1,395 @@
+body {
+    font-family: 'Economica', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#normal {
+    margin-top: 40px;
+    background: black url('../images/bg.jpg') repeat-x fixed;
+}
+
+#iframeGenerated {
+    background-color: bisque;
+}
+
+ul {
+    list-style: none;
+}
+/*Nav bar*/
+#menuBar {
+    color: white;
+    background-color: black;
+    background-color: rgba(25,25,25,0.5);
+    width: 100%;
+    height: 40px;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-decoration: none;
+}
+
+#home {
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+#navContainer {
+    margin: 0;
+    height:40px;
+    padding: 0 30px 0 0;
+}
+
+#threeLines {
+    display: none;
+}
+
+.nav {
+    margin-top: -2px;
+    float: right;
+}
+
+.menuItem {
+    margin-top: 0;
+    height: 42px;
+    width: 110px;
+    float: left;
+}
+
+.menuItem:hover{
+    text-decoration: underline;
+}
+
+.menuItem:hover, .menuItem li:hover{
+    background-color: black;
+}
+
+.menuLink {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 31px;
+    padding-top: 11px;
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown {
+    display: block;
+    width: 110px;
+    height: 42px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow: hidden;
+}
+
+.dropdown a {
+    text-decoration: none;
+}
+
+.dropdown li {
+    display: none;
+    text-decoration: none;
+}
+
+.dropdown:hover {
+    overflow: visible;
+    background-color: black;
+}
+
+.dropdown:hover li {
+    display: block;
+}
+
+.dropLi {
+    overflow: hidden;
+    text-decoration: none;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    background-color: rgba(25,25,25,0.5);
+}
+
+.dropLi:hover {
+    background-color: black;
+}
+
+.dropLi a {
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*Main site body*/
+#pictureHead {
+    max-width: 1910px;
+    height: 500px;
+    background: black url('../images/skaiaHeader.jpg') no-repeat;
+    margin-left: -8px;
+    margin-right: -8px;
+    overflow: hidden;
+}
+
+.container {
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(200,200,200);
+    border-radius: 15px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+#headerContainer {
+    width: 100%;
+    height: 100%;
+    background: url("../images/welcome.png") center no-repeat;
+}
+
+#headerDiv {
+    float: none;
+    display: inline-block;
+    text-decoration: underline;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 68px;
+    width: auto;
+    height: auto;
+    margin: 10px auto 15px;
+    box-shadow: 0 0 15px #888888;
+    background: bisque;
+}
+
+#contentContainer {
+    float: left;
+    width: 75%;
+    margin-left: 0.8%;
+}
+
+#changeContainer {
+    width: 95%;
+    margin-left: 1.5%;
+}
+
+.content, .changesContent {
+    border-radius: 15px;
+    padding: 10px;
+    height: auto;
+    background-color: darkgrey;
+    box-shadow: 10px 10px 5px #888888;
+    margin-bottom: 25px;
+}
+
+.changesContent {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.contentHead {
+    float: none;
+    background-color: bisque;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 2px 2px 8px #888888;
+    font-size: 24px;
+    margin-bottom: 15px;
+    height: auto;
+    overflow: hidden;
+}
+
+.contentBody {
+    float: none;
+    background-color: bisque;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 2px 2px 8px #888888;
+    font-size: 18px;
+    text-align: left;
+    height: auto;
+    overflow: hidden;
+}
+
+.changeList {
+    list-style-image: url("../images/liDash.gif");
+}
+
+#changeLog {
+    border-radius: 15px;
+    padding: 10px;
+    width: 15%;
+    min-width: 110px;
+    height: auto;
+    background-color: darkgrey;
+    box-shadow: 10px 10px 5px #888888;
+    margin: auto 2.5% 15px 3%;
+    float: right;
+    clear: right;
+    position: relative;
+}
+
+#changeLog .contentBody {
+    height: auto;
+}
+
+#changeLog ul {
+    margin: 0;
+    padding: 5px;
+    list-style-image: url("../images/liDash.gif");
+}
+
+#changeLog ul li {
+    margin-left: 20%;
+    padding-bottom: 5px;
+}
+
+#fullChangeDiv {
+
+    bottom: 15px;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+#sqlTableSuperDiv {
+    width: 100%;
+    float: left;
+    clear: left;
+}
+
+#sqlTableDiv {
+    width: 95%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    text-align: left;
+    border: 2px solid #4F6483;
+    border-radius: 10px;
+    float: none;
+}
+
+#sqlTable {
+    width: 100%;
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+#sqlTable tr {
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid #4F6483;
+}
+
+#sqlTable th {
+    text-align: left;
+    font-weight: bold;
+    font-size: larger;
+    padding-left: 15px;
+    color: whitesmoke;
+    border-left: 2px dashed #4F6483;
+    border-right: 2px dashed #4F6483;
+    background-color: #9FA4BF;
+}
+
+#sqlTable td {
+    padding-left: 15px;
+    border-left: 2px dashed #4F6483;
+    border-right: 2px dashed #4F6483;
+}
+
+#sqlTable tr.alt td {
+    background-color: #9Fb4e3;
+}
+
+#dbNav {
+    border-collapse: collapse;
+    border-style: hidden;
+    width: 100%;
+}
+
+#dbNav td {
+    width: auto;
+    text-align: center;
+}
+
+#dbNav a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #4F6483;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#dbNav a:hover {
+    color: antiquewhite;
+    background-color: #4F6483;
+}
+
+#sqlFormDiv {
+    width: 95%;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0 2.5% 0;
+    float: left;
+    display: block;
+    overflow: hidden;
+}
+
+#sqlFieldset {
+    border: 2px solid #4F6483;
+    border-radius: 5px;
+    width: auto;
+    margin-bottom: 10px;
+    float: left;
+    clear: left;
+}
+
+#sqlFieldset p {
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#sqlFieldset label {
+    width: 70px;
+    float: left;
+    text-align: right;
+    margin-right: 5px;
+}
+
+#sqlFieldset input {
+    width: 142px;
+}
+
+#submissionResults {
+    margin-left: 10px;
+    float: left;
+    height: auto;
+    width: auto;
+}
+
+#iFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
