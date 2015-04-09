@@ -19,7 +19,7 @@ function doTableLinks() {
                 <a href="php/database/RemoveFromTable.php" target="WarFrame">Remove an Entry</a>
               </td>
               <td>
-                <a href="php/database/UpdateItemInTable.php" target="WarFrame">Update an Entry</a>
+                <a href="php/database/UpdateTable.php" target="WarFrame">Update an Entry</a>
               </td>
             </tr>
           </table>';
