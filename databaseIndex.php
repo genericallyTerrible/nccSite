@@ -13,13 +13,14 @@ $content = [
         'title'   => doTableLinks(),
         'content' => '
             <script type="text/javascript">
-                function resizeIframe(obj) {
+                function resizeIframe(obj,pictureHead2) { pictureHead2=pictureHead2||pictureHead;
                     obj.style.height = 0;
                     obj.style.height = obj.contentWindow.document.body.scrollHeight + "px";
                     if(obj.style.height == 8 + "px"){
                         WarFrame.location.href = "php/database/ViewTable.php";
                     }
-                    window.scrollTo(0,document.body.scrollHeight);
+                    var $pictureHead = document.getElementById("pictureHead");
+                    window.scrollTo(0, $pictureHead.scrollHeight + 40);
                 }
             </script>
 
