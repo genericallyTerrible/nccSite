@@ -13,18 +13,17 @@ $content = [
         'title'   => doTableLinks(),
         'content' => '
             <script type="text/javascript">
-                function resizeIframe(obj,pictureHead2) { pictureHead2=pictureHead2||pictureHead;
+                function resizeIframe(obj) {
                     obj.style.height = 0;
-                    obj.style.height = obj.contentWindow.document.body.scrollHeight + "px";
-                    if(obj.style.height <= 10 + "px" && obj.style.height > 0 + "px"){
+                    obj.style.height = obj.contentWindow.document.body.scrollHeight + 2 + "px";
+                    if(obj.style.height == 8 + "px" || ((obj.style.height <= 9 + "px") && (obj.style.height >= 7 + "px" ))){
                         WarFrame.location.href = "php/database/ViewTable.php";
                     }
-                    var $pictureHead = document.getElementById("pictureHead");
-                    window.scrollTo(0, $pictureHead.scrollHeight + 40);
+                    window.scrollTo(0,document.body.scrollHeight);
                 }
             </script>
 
-            <iframe id="iFrame" name="WarFrame" onload="resizeIframe(this)" ></iframe>'
+            <iframe scrolling="no" id="iFrame" name="WarFrame" onload="resizeIframe(this)" ></iframe>'
     ]
 ];
 

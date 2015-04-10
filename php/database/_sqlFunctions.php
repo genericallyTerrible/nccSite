@@ -19,7 +19,7 @@ function doTableLinks() {
                 <a href="php/database/RemoveFromTable.php" target="WarFrame">Remove an Entry</a>
               </td>
               <td>
-                <a href="php/database/UpdateTable.php" target="WarFrame">Update an Entry</a>
+                <a href="php/database/UpdateItemInTable.php" target="WarFrame">Update an Entry</a>
               </td>
             </tr>
           </table>';
@@ -43,7 +43,7 @@ function doCreateEntry() {
         $FirstName = $_POST['FirstName'];
         $newEntry = createEntry($id, $LastName, $FirstName);
         if ($newEntry != null) {
-            $generatedContent .= $newEntry;
+        $generatedContent .= $newEntry;
         } else {
             $generatedContent .= '<div id="submissionResults"><p>Submission Error:&nbsp;</p><p>' . $GLOBALS['errorMsg'] . '</p><p>'. $GLOBALS['lastQuery'] . '</p></div>';
         }
@@ -181,8 +181,8 @@ function createEntry($id, $lastName, $firstName) {
             closeConnection($conn);
             return '<div id="submissionResults">
              <p>ID = "'         . $id        . '"</p>' .
-            '<p>First Name = "' . $firstName . '"</p>' .
-            '<p>Last Name = "'  . $lastName  . '"</p>
+            '<p>Last Name = "'  . $lastName  . '"</p>' .
+            '<p>First Name = "' . $firstName . '"</p>
             </div>';
         } else {
             echo '<script>alert("Error: ' . $query . "\\n\\n" . $conn->error . '")</script>';

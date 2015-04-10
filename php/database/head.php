@@ -1,4 +1,5 @@
 <?php include('_sqlFunctions.php'); ?>
+<meta charset="utf-8">
 <link href='http://fonts.googleapis.com/css?family=Economica:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../../css/default.css" type="text/css" />
 <link rel='stylesheet' media='screen and (max-width: 499px)' href='../../css/mobile.css' />
