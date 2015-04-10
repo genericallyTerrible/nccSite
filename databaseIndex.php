@@ -16,7 +16,7 @@ $content = [
                 function resizeIframe(obj,pictureHead2) { pictureHead2=pictureHead2||pictureHead;
                     obj.style.height = 0;
                     obj.style.height = obj.contentWindow.document.body.scrollHeight + "px";
-                    if(obj.style.height == 8 + "px"){
+                    if(obj.style.height <= 10 + "px" && obj.style.height > 0 + "px"){
                         WarFrame.location.href = "php/database/ViewTable.php";
                     }
                     var $pictureHead = document.getElementById("pictureHead");
