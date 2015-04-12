@@ -19,7 +19,7 @@ $content = [
                     if(obj.style.height == 10 + "px" || ((obj.style.height <= 11 + "px") && (obj.style.height >= 9 + "px" ))){
                         WarFrame.location.href = "php/database/ViewTable.php";
                     }
-                    window.scrollTo(0,document.body.scrollHeight);
+                    window.scrollTo(0, (document.getElementById("pictureHead").scrollHeight + 140));
                 }
             </script>
 
