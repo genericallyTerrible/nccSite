@@ -33,10 +33,10 @@ function generateMenu($name, $ulClass, $liClass, $message){
 
 function generateSplash(){
     $splash = '';
+    $splash .= '<div id="headerContainer" ';
     if($GLOBALS['splashGraphics'])
-        $splash .= '<div id="headerContainer">';
-    $splash .= '<div id="headerDiv">' . $GLOBALS[splashMessage] . '</div>';
-    if($GLOBALS['splashGraphics'])
-        $splash .= '</div>';
+        $splash .= 'class="splashContainer"';
+
+    $splash .= '><div id="headerDiv">' . $GLOBALS[splashMessage] . '</div></div>';
     return $splash;
 }

@@ -11,7 +11,8 @@ $assignmentsArray = array(
     array('text' => 'Hello, World!','url' => 'assignments/helloWorld/helloWorld.html" target="_blank'),
     array('text' => 'Mimic an Ad',  'url' => 'assignments/advert/advert.html" target="_blank'),
     array('text' => 'JS Exercises', 'url' => 'assignments/jsExercises/jsIndex.html" target="_blank'),
-    array('text' => 'SQL Table',    'url' => 'databaseIndex.php')
+    array('text' => 'SQL Table',    'url' => 'databaseIndex.php'),
+    array('text' => 'JQuery Fun',   'url' => 'jqueryFunctions.php')
     //add here to extend menu list
 );
 

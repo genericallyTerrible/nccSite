@@ -12,6 +12,11 @@
 */
 $changes =
 [
+    ['date' => '4/13/15',
+      ['fullChange'  => 'Added a page for JQuery and made minor change in the way the headerDiv is generated',
+       'shortChange' => 'Added JQuery page'
+      ]
+    ],
     ['date' => '4/9/2015',
         ['fullChange'  => 'To reduced page loads, database effecting php files were broken into smaller pieces and are now added through an iframe and some simple Javascript',
          'shortChange' => 'Database editable form a single page'
