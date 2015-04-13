@@ -13,6 +13,9 @@
 $changes =
 [
     ['date' => '4/13/15',
+      ['fullChange'  => 'Updated font for readability and necessary CSS spacings to accommodate',
+       'shortChange' => 'Changed site font'
+      ],
       ['fullChange'  => 'Added a page for JQuery and made minor change in the way the headerDiv is generated',
        'shortChange' => 'Added JQuery page'
       ]

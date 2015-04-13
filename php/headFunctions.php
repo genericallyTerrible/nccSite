@@ -16,7 +16,7 @@ function generateMenu($name, $ulClass, $liClass, $message){
     foreach ($itemsArray as $item) {
         $nav .= '<li class="' . $liClass . '">';
         if ($item['method'] == 'special')
-            $nav .= generateMenu('assignments', 'dropdown', 'dropLi', '<span>Assignments&#9660;</span>') . '</li>';
+            $nav .= generateMenu('assignments', 'dropdown', 'dropLi', '<span>Assignments &#9660;</span>') . '</li>';
         else {
             $nav .= '<a ';
             if ($item['linkClass'])

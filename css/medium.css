@@ -1,6 +1,14 @@
 #navContainer {
     padding-right: 0;
-    margin-right: 0;
+    margin-right: 10px;
+}
+
+#menuBar {
+    font-size: 14px;
+}
+
+.menuItem {
+    width: 110px;
 }
 
 #pictureHead {
