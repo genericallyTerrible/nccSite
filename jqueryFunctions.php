@@ -16,12 +16,14 @@ $content = [
         'content' => '
         <div id="myLittleGame">
             <div id="clickMe">Click Me</div>
-            <div id="myLittleToy"></div>
         </div>
         <script>
-            $(window).resize(function() {
+            $( window ).resize(function() {
                 resizeContainer();
             });
+            $( "#clickMe" ).on("click", function() {
+                onClick();
+            })
         </script>
         '
     ]

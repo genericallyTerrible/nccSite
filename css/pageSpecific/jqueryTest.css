@@ -6,28 +6,11 @@
     position: relative;
 }
 
-#myLittleToy {
-    z-index: 2;
-    position: absolute;
-    width: 15%;
-    height: 15%;
-    margin: 0;
-    padding: 0;
-    background-color: bisque;
-    -webkit-animation: doCircles 5s infinite;
-}
-
-@-webkit-keyframes doCircles {
-    
- }
-
 #clickMe {
     z-index: 1;
     position: absolute;
     text-align: center;
     padding: 0;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    cursor: pointer;
+    cursor: hand;
 }
