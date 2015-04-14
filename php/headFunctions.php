@@ -5,6 +5,30 @@ function do_page_title($pageTitle){
     return $pageTitle . $GLOBALS['pageGreeting'];
 }
 
+function do_extra_css($cssArray){
+    $generatedLinks = "";
+    if($cssArray)
+        foreach($cssArray as $filePath){
+            $generatedLinks .= '<link rel="stylesheet" type="text/css" href="' . $filePath . '" />';
+        }
+    return $generatedLinks;
+}
+
+function do_scripts($scriptArray){
+    $generated = "";
+    if($scriptArray)
+        foreach($scriptArray as $filePath){
+            $generated .= '<script src="' . $filePath . '"></script>';
+        }
+    return $generated;
+}
+
+function do_onload($scriptName){
+    if($scriptName){
+        return 'onload="'. "$scriptName" . '"';
+    }
+}
+
 include_once('_navContent.php');
 
 function generateMenu($name, $ulClass, $liClass, $message){

@@ -5,7 +5,7 @@ $splashGraphics = false;
 $freeDesign = true;
 $sidebar = true;
 $numberOfChanges = 2;
-
+$extraCss = ["css/pageSpecific/database.css"]; //Omit for no extra css
 include "php/database/_sqlFunctions.php";
 
 $content = [

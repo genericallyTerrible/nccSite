@@ -12,13 +12,20 @@
 */
 $changes =
 [
+    ['date' => '4/14/13',
+        ['fullChange'  => 'Overhauled folder structure, removing anything unnecessary and creating better ways of adding page specific scripts and css files on a page by page basis.
+            Also began work on the JQuery assignment page.',
+         'shortChange' => 'Worked on JQuery'
+
+        ]
+    ],
     ['date' => '4/13/15',
-      ['fullChange'  => 'Updated font for readability and necessary CSS spacings to accommodate',
-       'shortChange' => 'Changed site font'
-      ],
-      ['fullChange'  => 'Added a page for JQuery and made minor change in the way the headerDiv is generated',
-       'shortChange' => 'Added JQuery page'
-      ]
+        ['fullChange'  => 'Updated font for readability and necessary CSS spacings to accommodate',
+         'shortChange' => 'Changed site font'
+        ],
+        ['fullChange'  => 'Added a page for JQuery and made minor change in the way the headerDiv is generated',
+         'shortChange' => 'Added JQuery page'
+        ]
     ],
     ['date' => '4/9/2015',
         ['fullChange'  => 'To reduced page loads, database effecting php files were broken into smaller pieces and are now added through an iframe and some simple Javascript',

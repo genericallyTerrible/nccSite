@@ -1,0 +1,128 @@
+#sqlTableSuperDiv {
+    width: 100%;
+    float: left;
+    clear: left;
+}
+
+#sqlTableDiv {
+    width: 95%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    text-align: left;
+    border: 2px solid #4F6483;
+    border-radius: 10px;
+    float: none;
+}
+
+#sqlTable {
+    width: 100%;
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+#sqlTable tr {
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid #4F6483;
+}
+
+#sqlTable th {
+    text-align: left;
+    font-weight: bold;
+    font-size: larger;
+    padding-left: 15px;
+    color: whitesmoke;
+    border-left: 2px dashed #4F6483;
+    border-right: 2px dashed #4F6483;
+    background-color: #9FA4BF;
+}
+
+#sqlTable td {
+    padding-left: 15px;
+    border-left: 2px dashed #4F6483;
+    border-right: 2px dashed #4F6483;
+}
+
+#sqlTable tr.alt td {
+    background-color: #9Fb4e3;
+}
+
+#dbNav {
+    border-collapse: collapse;
+    border-style: hidden;
+    width: 100%;
+}
+
+#dbNav td {
+    width: auto;
+    text-align: center;
+}
+
+#dbNav a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #4F6483;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#dbNav a:hover {
+    color: antiquewhite;
+    background-color: #4F6483;
+}
+
+#sqlFormDiv {
+    width: 95%;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0 2.5% 0;
+    float: left;
+    display: block;
+    overflow: hidden;
+}
+
+#sqlFieldset {
+    border: 2px solid #4F6483;
+    border-radius: 5px;
+    width: auto;
+    margin-bottom: 10px;
+    float: left;
+    clear: left;
+}
+
+#sqlFieldset p {
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#sqlFieldset label {
+    width: 80px;
+    float: left;
+    text-align: right;
+    margin-right: 5px;
+}
+
+#sqlFieldset input {
+    width: 142px;
+}
+
+#submissionResults {
+    margin-left: 10px;
+    float: left;
+    height: auto;
+    width: auto;
+}
+
+#iFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
