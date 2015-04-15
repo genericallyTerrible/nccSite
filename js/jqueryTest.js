@@ -1,11 +1,16 @@
 $( document ).ready(function() {
-    resizeContainer();
+    resizeGameContainer();
+    resizeClickCircles();
+    $( ".clickCircle").each(function() {
+        $(this).center();
+    });
+
 });
 
-var clickCount = 0;
+var clickCount = 1;
 var multiplier = 0;
 
-function resizeContainer() {
+function resizeGameContainer() {
     var container = $( "#myLittleGame");
     var maxDimension;
     multiplier = 3;
@@ -31,73 +36,79 @@ function resizeContainer() {
         "width": maxDimension + "px",
         "height": maxDimension + "px"
     });
-    resizeClickMe();
-    centerClickMe();
+    resizeClickCircles();
     scrollToGame(250);
-    clickCount = 0;
 }
 
-function resizeClickMe(){
-    $( "#clickMe" ).css({"font-size": (multiplier * 10) + "px"});
+function resizeClickCircles(){
+    $( ".clickCircle").each(function(){
+        $(this).css({height: $(this).width() + "px"});
+    });
 }
+
+jQuery.fn.center = function () {
+    var parent = this.parent();
+    var percentage = ((($(parent).height() - this.outerHeight()) / 2) + $(parent).scrollTop()) / $(parent).height() * 100 + "%"
+    this.css({
+        "top": percentage,
+        "left": percentage
+    });
+    return this;
+};
 
 function scrollToGame(timeDelay) {
     $('html, body').animate({
-        scrollTop: $(".contentHead").offset().top
+        scrollTop: $(".contentBody").offset().top - 35
     }, timeDelay);
 }
 
-function centerClickMe() {
+function onClick(id) {
     var sideLength = $( "#myLittleGame").height();
-    var clickMe = $( "#clickMe" );
-    var itemW = clickMe.width();
-    var itemH = clickMe.height();
-    clickMe.css({
-        WebkitTransition : 'top 1s ease-in-out, left 1s ease-in-out',
-        MozTransition    : 'top 1s ease-in-out, left 1s ease-in-out',
-        MsTransition     : 'top 1s ease-in-out, left 1s ease-in-out',
-        OTransition      : 'top 1s ease-in-out, left 1s ease-in-out',
-        transition       : 'top 1s ease-in-out, left 1s ease-in-out',
-        top:  ((0.5 * sideLength) - (0.5 * itemH)) + (2 / multiplier) + "px",
-        left: ((0.5 * sideLength) - (0.5 * itemW)) + (2 / multiplier) + "px"
-    })
-}
-
-function onClick() {
-    var sideLength = $( "#myLittleGame").height();
-    var clickMe = $( "#clickMe" );
-    var itemW = clickMe.width();
-    var itemH = clickMe.height();
+    var clickCircle = $( "#" + id);
+    var itemW = clickCircle.width();
+    var itemH = clickCircle.height();
+    var fullWidth = (sideLength - itemW) / sideLength * 100 + "%";
+    var fullHeight = (sideLength - itemH) / sideLength * 100 + "%";
     switch (clickCount){
-        case 0:
-            clickMe.css({
-                top:   0 + "px",
-                left: 10 + "px"
-            });
-            break;
         case 1:
-            clickMe.css({
-                left: (sideLength - itemW) + "px"
+            clickCircle.css({
+                top:  0,
+                left: fullWidth
             });
             break;
         case 2:
-            clickMe.css({
-                top: (sideLength - itemH + 10) + "px"
+            clickCircle.center();
+            clickCircle.css({
+                left: fullWidth
             });
             break;
         case 3:
-            clickMe.css({
-                left: 0 + "px"
+            clickCircle.css({
+                top: fullHeight,
+                left: fullWidth
             });
             break;
         case 4:
-            clickMe.css({
-                top: 0
+            clickCircle.css({
+                top: fullHeight,
+                left: 0
             });
-            clickCount = 0;
+            break;
+        case 5:
+            clickCircle.center();
+            clickCircle.css({
+                left: 0
+            });
+            break;
+        case 6:
+            clickCircle.css({
+                top: 0,
+                left: 0
+            });
             break;
         default:
-            centerClickMe();
+            clickCircle.center();
+            clickCount = 0;
     }
     clickCount++;
 }

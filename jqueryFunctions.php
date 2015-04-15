@@ -12,17 +12,22 @@ $content = [
     //Copy this title/content array structure for the number of individual content boxes desired
     [
         //Do not modify this structure
-        'title'   => 'JQuery',
+        'title'   => 'Color Circles',
         'content' => '
         <div id="myLittleGame">
-            <div id="clickMe">Click Me</div>
+            <div class="clickCircle" id="red"></div>
+            <div class="clickCircle" id="purple"></div>
+            <div class="clickCircle" id="blue"></div>
+            <div class="clickCircle" id="green"></div>
+            <div class="clickCircle" id="yellow"></div>
+            <div class="clickCircle" id="orange"></div>
         </div>
         <script>
             $( window ).resize(function() {
-                resizeContainer();
+                resizeGameContainer();
             });
-            $( "#clickMe" ).on("click", function() {
-                onClick();
+            $(".clickCircle").click(function() {
+                onClick($(this).attr("id"));
             })
         </script>
         '
