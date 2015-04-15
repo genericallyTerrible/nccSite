@@ -32,7 +32,12 @@
 
 .menuItem {
     float: none;
+    margin-top: 12px;
     width: 100%;
+}
+
+.menuItem:first-child {
+    margin-top: 0;
 }
 
 #home {

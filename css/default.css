@@ -46,7 +46,7 @@ ul {
 
 #navContainer {
     margin: 0;
-    height:40px;
+    height: 40px;
     padding: 0 30px 0 0;
 }
 
@@ -64,9 +64,13 @@ ul {
 
 .menuItem {
     margin-top: 0;
-    height: 42px;
+    height: 31px;
     width: 130px;
     float: left;
+}
+
+#home .menuItem {
+    height: 40px;
 }
 
 .menuItem:hover{
