@@ -1,3 +1,7 @@
+var isCircleCenter = [true, true, true, true, true, true];
+var multiplier = 0;
+var zIndexTracker = 6;
+
 $( document ).ready(function() {
     resizeGameContainer();
     resizeClickCircles();
@@ -13,9 +17,6 @@ $( document ).ready(function() {
     });
 
 });
-
-var isCircleCenter = [true, true, true, true, true, true];
-var multiplier = 0;
 
 function resizeGameContainer() {
     var container = $( "#myLittleGame");
@@ -83,8 +84,13 @@ function onClick(id) {
                     top: 0,
                     left: fullWidth
                 });
+                zIndexTracker--;
             } else {
                 clickCircle.center();
+                clickCircle.css({
+                   "z-index": zIndexTracker
+                });
+                zIndexTracker++;
             }
             isCircleCenter[0] = !isCircleCenter[0];
             break;
@@ -94,8 +100,13 @@ function onClick(id) {
                 clickCircle.css({
                     left: fullWidth
                 });
+                zIndexTracker--;
             } else {
                 clickCircle.center();
+                clickCircle.css({
+                    "z-index": zIndexTracker
+                });
+                zIndexTracker++;
             }
             isCircleCenter[1] = !isCircleCenter[1];
             break;
@@ -105,8 +116,13 @@ function onClick(id) {
                     top: fullHeight,
                     left: fullWidth
                 });
+                zIndexTracker--;
             } else {
                 clickCircle.center();
+                clickCircle.css({
+                    "z-index": zIndexTracker
+                });
+                zIndexTracker++;
             }
             isCircleCenter[2] = !isCircleCenter[2];
             break;
@@ -116,8 +132,13 @@ function onClick(id) {
                     top: fullHeight,
                     left: 0
                 });
+                zIndexTracker--;
             } else {
                 clickCircle.center();
+                clickCircle.css({
+                    "z-index": zIndexTracker
+                });
+                zIndexTracker++;
             }
             isCircleCenter[3] = !isCircleCenter[3];
             break;
@@ -127,8 +148,13 @@ function onClick(id) {
                 clickCircle.css({
                     left: 0
                 });
+                zIndexTracker--;
             } else {
                 clickCircle.center();
+                clickCircle.css({
+                    "z-index": zIndexTracker
+                });
+                zIndexTracker++;
             }
             isCircleCenter[4] = !isCircleCenter[4];
             break;
@@ -138,8 +164,13 @@ function onClick(id) {
                     top: 0,
                     left: 0
                 });
+                zIndexTracker--;
             } else {
                 clickCircle.center();
+                clickCircle.css({
+                    "z-index": zIndexTracker
+                });
+                zIndexTracker++;
             }
             isCircleCenter[5] = !isCircleCenter[5];
             break;
