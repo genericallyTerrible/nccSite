@@ -1,13 +1,20 @@
 $( document ).ready(function() {
     resizeGameContainer();
     resizeClickCircles();
+    var timerMultiplier = 6;
     $( ".clickCircle").each(function() {
         $(this).center();
+        $(this).animate({
+            opacity: 1
+        }, (timerMultiplier * 500), function(){
+            onClick($(this).attr("id"));
+        });
+        timerMultiplier--;
     });
 
 });
 
-var clickCount = 1;
+var isCircleCenter = [true, true, true, true, true, true];
 var multiplier = 0;
 
 function resizeGameContainer() {
@@ -69,46 +76,74 @@ function onClick(id) {
     var itemH = clickCircle.height();
     var fullWidth = (sideLength - itemW) / sideLength * 100 + "%";
     var fullHeight = (sideLength - itemH) / sideLength * 100 + "%";
-    switch (clickCount){
-        case 1:
-            clickCircle.css({
-                top:  0,
-                left: fullWidth
-            });
+    switch (id) {
+        case "red":
+            if (isCircleCenter[0]) {
+                clickCircle.css({
+                    top: 0,
+                    left: fullWidth
+                });
+            } else {
+                clickCircle.center();
+            }
+            isCircleCenter[0] = !isCircleCenter[0];
             break;
-        case 2:
-            clickCircle.center();
-            clickCircle.css({
-                left: fullWidth
-            });
+        case "orange":
+            if(isCircleCenter[1]) {
+                clickCircle.center();
+                clickCircle.css({
+                    left: fullWidth
+                });
+            } else {
+                clickCircle.center();
+            }
+            isCircleCenter[1] = !isCircleCenter[1];
             break;
-        case 3:
-            clickCircle.css({
-                top: fullHeight,
-                left: fullWidth
-            });
+        case "yellow":
+            if(isCircleCenter[2]) {
+                clickCircle.css({
+                    top: fullHeight,
+                    left: fullWidth
+                });
+            } else {
+                clickCircle.center();
+            }
+            isCircleCenter[2] = !isCircleCenter[2];
             break;
-        case 4:
-            clickCircle.css({
-                top: fullHeight,
-                left: 0
-            });
+        case "green":
+            if(isCircleCenter[3]) {
+                clickCircle.css({
+                    top: fullHeight,
+                    left: 0
+                });
+            } else {
+                clickCircle.center();
+            }
+            isCircleCenter[3] = !isCircleCenter[3];
             break;
-        case 5:
-            clickCircle.center();
-            clickCircle.css({
-                left: 0
-            });
+        case "blue":
+            if(isCircleCenter[4]) {
+                clickCircle.center();
+                clickCircle.css({
+                    left: 0
+                });
+            } else {
+                clickCircle.center();
+            }
+            isCircleCenter[4] = !isCircleCenter[4];
             break;
-        case 6:
-            clickCircle.css({
-                top: 0,
-                left: 0
-            });
+        case "purple":
+            if(isCircleCenter[5]) {
+                clickCircle.css({
+                    top: 0,
+                    left: 0
+                });
+            } else {
+                clickCircle.center();
+            }
+            isCircleCenter[5] = !isCircleCenter[5];
             break;
         default:
             clickCircle.center();
-            clickCount = 0;
     }
-    clickCount++;
 }

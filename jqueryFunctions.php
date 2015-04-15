@@ -15,12 +15,12 @@ $content = [
         'title'   => 'Color Circles',
         'content' => '
         <div id="myLittleGame">
-            <div class="clickCircle" id="red"></div>
             <div class="clickCircle" id="purple"></div>
             <div class="clickCircle" id="blue"></div>
             <div class="clickCircle" id="green"></div>
             <div class="clickCircle" id="yellow"></div>
             <div class="clickCircle" id="orange"></div>
+            <div class="clickCircle" id="red"></div>
         </div>
         <script>
             $( window ).resize(function() {

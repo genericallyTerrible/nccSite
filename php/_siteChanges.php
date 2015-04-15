@@ -12,7 +12,12 @@
 */
 $changes =
 [
-    ['date' => '4/14/13',
+    ['date' => '4/15/15',
+        ['fullChange' => 'Created and deployed Javascript/JQuery for moving and modifying semi-transparently circular div\'s in the style of a color mixer/color wheel',
+         'shortChange' => 'Check <a href="jqueryFunctions.php">THIS</a> out!'
+        ]
+    ],
+    ['date' => '4/14/15',
         ['fullChange'  => 'Overhauled folder structure, removing anything unnecessary and creating better ways of adding page specific scripts and css files on a page by page basis.
             Also began work on the JQuery assignment page.',
          'shortChange' => 'Worked on JQuery'
