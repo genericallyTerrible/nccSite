@@ -14,7 +14,7 @@
     <?php echo do_extra_css($extraCss); ?>
     <?php echo do_scripts  ($scripts);  ?>
 </head>
-<body id="normal" <?php echo do_onload($onload); ?>>
+<body id="normal" <?php echo do_onload($onLoad); ?>>
 <div id="menuBar">
     <ul id="home">
         <li class="menuItem">

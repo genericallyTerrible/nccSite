@@ -25,6 +25,10 @@ function doTableLinks() {
           </table>';
 }
 
+function doIFrame() {
+    return '<iframe scrolling="no" id="iFrame" name="WarFrame" onload="resizeIframe(this)" ></iframe>';
+}
+
 function doCreateEntry() {
     $generatedContent = '
 <div id="sqlFormDiv">

@@ -15,12 +15,18 @@ $content = [
         'title'   => 'Color Circles',
         'content' => '
         <div id="myLittleGame">
-            <div class="clickCircle" id="purple"></div>
-            <div class="clickCircle" id="blue"></div>
-            <div class="clickCircle" id="green"></div>
-            <div class="clickCircle" id="yellow"></div>
-            <div class="clickCircle" id="orange"></div>
-            <div class="clickCircle" id="red"></div>
+            <div class="clickCircle purple" id="purple"></div>
+            <div class="clickCircle blue"   id="blue"></div>
+            <div class="clickCircle green"  id="green"></div>
+            <div class="clickCircle yellow" id="yellow"></div>
+            <div class="clickCircle orange" id="orange"></div>
+            <div class="clickCircle red"    id="red"></div>
+            <div class="clickButtonContainer purple" id="purpleButton"><div class="clickButton upperButton"></div><div class="clickButton lowerButton"></div></div>
+            <div class="clickButtonContainer blue"   id="blueButton"><div class="clickButton upperButton"></div><div class="clickButton lowerButton"></div></div>
+            <div class="clickButtonContainer green"  id="greenButton"><div class="clickButton upperButton"></div><div class="clickButton lowerButton"></div></div>
+            <div class="clickButtonContainer yellow" id="yellowButton"><div class="clickButton upperButton"></div><div class="clickButton lowerButton"></div></div>
+            <div class="clickButtonContainer orange" id="orangeButton"><div class="clickButton upperButton"></div><div class="clickButton lowerButton"></div></div>
+            <div class="clickButtonContainer red"    id="redButton"><div class="clickButton upperButton"></div><div class="clickButton lowerButton"></div></div>
         </div>
         <script>
             $( window ).resize(function() {
@@ -28,6 +34,12 @@ $content = [
             });
             $(".clickCircle").click(function() {
                 onClick($(this).attr("id"));
+            });
+            $(".upperButton").click(function() {
+                shuffleUp($(this).parent().attr("class"));
+            });
+            $(".lowerButton").click(function() {
+                shuffleDown($(this).parent().attr("class"));
             })
         </script>
         '

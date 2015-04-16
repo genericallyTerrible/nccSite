@@ -6,6 +6,7 @@
 }
 
 .clickCircle {
+    z-index: 1;
     width: 30%;
     position: absolute;
     text-align: center;
@@ -23,32 +24,103 @@
     left:   auto;
 }
 
-#red {
+.red {
     background-color: rgba(200, 25, 5, 0.55);
+}
+
+#red {
     opacity: 0;
 }
 
-#orange {
+.orange{
     background-color: rgba(255, 126, 14, 0.55);
+}
+
+
+#orange {
     opacity: 0;
+}
+
+.yellow {
+    background-color: rgba( 250, 250, 0, 0.55);
 }
 
 #yellow {
-    background-color: rgba( 250, 250, 0, 0.55);
     opacity: 0;
+}
+
+.green {
+    background-color: rgba( 5, 200, 25, 0.55);
 }
 
 #green {
-    background-color: rgba( 5, 200, 25, 0.55);
     opacity: 0;
+}
+
+.blue {
+    background-color: rgba( 25, 5, 200, 0.55);
 }
 
 #blue {
-    background-color: rgba( 25, 5, 200, 0.55);
     opacity: 0;
 }
 
-#purple {
+.purple {
     background-color: rgba(120, 50, 150, 0.55);
+}
+
+#purple {
     opacity: 0;
+}
+
+.clickButtonContainer{
+    opacity: 0;
+
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition:    opacity 1s ease-in-out;
+    -o-transition:      opacity 1s ease-in-out;
+    transition:         opacity 1s ease-in-out;
+
+    z-index: 0;
+    width: 30%;
+    position: absolute;
+    border-radius: 50%;
+    padding: 0;
+    top: auto;
+    left: auto;
+}
+
+.clickButton {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: solid 4px white;
+
+    height: 50%;
+    width: 100%;
+    left: 0;
+    border-radius: 50% / 100%;
+}
+
+.upperButton, .lowerButton {
+    font-size: 1.75vw;
+    text-align: center;
+
+}
+
+.upperButton{
+    border-bottom-width: 2px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-top: 20%;
+}
+
+.lowerButton{
+    padding-top: 10%;
+    border-top-width: 2px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 }

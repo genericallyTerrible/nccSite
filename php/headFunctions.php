@@ -25,7 +25,7 @@ function do_scripts($scriptArray){
 
 function do_onload($scriptName){
     if($scriptName){
-        return 'onload="'. "$scriptName" . '"';
+        return 'onload="'. $scriptName . '()"';
     }
 }
 
