@@ -12,8 +12,13 @@
 */
 $changes =
 [
+    ['date' => '4/29/15',
+        ['fullChange'  => 'Modified the nav bar, especial for the mobile css and also added a download page for MP4 from programming 2',
+         'shortChange' => '<a href="pokagonDownload.php">Recent Project for Programming 2</a>'
+        ]
+    ],
     ['date' => '4/15/15',
-        ['fullChange' => 'Created and deployed Javascript/JQuery for moving and modifying semi-transparently circular div\'s in the style of a color mixer/color wheel',
+        ['fullChange'  => 'Created and deployed Javascript/JQuery for moving and modifying semi-transparently circular div\'s in the style of a color mixer/color wheel',
          'shortChange' => 'Check <a href="jqueryFunctions.php">THIS</a> out!'
         ]
     ],

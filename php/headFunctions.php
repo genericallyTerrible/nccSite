@@ -35,12 +35,14 @@ function generateMenu($name, $ulClass, $liClass, $message){
 
     $itemsArray = $GLOBALS["$name" . 'Array'];
 
-    $nav = '<ul class= "' . $ulClass . '" >' . $message;
+    $nav = '<ul class= "' . $ulClass . '" id="' . $name . '_UL" >' . $message;
 
     foreach ($itemsArray as $item) {
         $nav .= '<li class="' . $liClass . '">';
-        if ($item['method'] == 'special')
+        if ($item['dropList'] == 'assignments')
             $nav .= generateMenu('assignments', 'dropdown', 'dropLi', '<span>Assignments &#9660;</span>') . '</li>';
+        else if($item['dropList'] == 'projects')
+            $nav .= generateMenu('projects', 'dropdown', 'dropLi', '<span>Projects &#9660;</span>') . '</li>';
         else {
             $nav .= '<a ';
             if ($item['linkClass'])
